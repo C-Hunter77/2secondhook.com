@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2 Second Hook — Professional videography, content creation, editing, and web deployment services. From talking head videos to event coverage, we hook your audience in the first 2 seconds." />
+  <title>2 Second Hook — Videography &amp; Content Creation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Inline reveal animation style -->
+  <style>
+    [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    [data-reveal].is-visible { opacity: 1; transform: none; }
+    [data-reveal="left"]  { transform: translateX(-30px); }
+    [data-reveal="right"] { transform: translateX(30px); }
+    [data-reveal="left"].is-visible,
+    [data-reveal="right"].is-visible { transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================
+     NAVIGATION
+======================================================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="2 Second Hook home">
+      2<span>SecondHook</span>
+    </a>
+
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#equipment">Equipment</a></li>
+      <li><a href="#web">Web &amp; Editing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="pricing.html" class="btn btn--primary">Pricing &amp; Book</a></li>
+    </ul>
+
+    <button class="nav__toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========================================================
+     HERO — full-viewport with background video
+======================================================== -->
+<section class="hero" aria-label="Hero">
+  <div class="hero__video-wrap" aria-hidden="true">
+    <!--
+      REPLACE: swap the src below with your actual showreel video file.
+      Recommended format: MP4 (H.264), 1920×1080, < 20 MB for fast load.
+      Example: <source src="assets/showreel.mp4" type="video/mp4" />
+    -->
+    <!--
+      ACTION REQUIRED: Add your showreel video as assets/hero-showreel.mp4
+      See assets/README.md for file requirements and compression tips.
+      Until the file is added, the poster image below will be shown instead.
+    -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1920&q=80"
+      aria-hidden="true"
+    >
+      <source src="assets/hero-showreel.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge">
+        <!-- camera icon -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Professional Videography &amp; Content Creation
+      </span>
+
+      <h1 class="hero__title">
+        Hook Your Audience<br />in <em>2 Seconds</em> Flat
+      </h1>
+
+      <p class="hero__sub">
+        From cinematic social media reels to full-scale event coverage and local business ads — compelling visuals crafted to stop the scroll and drive results.
+      </p>
+
+      <div class="hero__actions">
+        <a href="pricing.html" class="btn btn--primary">View Pricing &amp; Book</a>
+        <a href="#services" class="btn btn--outline">Explore Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ========================================================
+     SERVICES
+======================================================== -->
+<section class="section" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <span class="section__label">What We Do</span>
+    <h2 class="section__heading" id="services-heading">Services Built Around Your Brand</h2>
+    <p class="section__sub">Whether you need a punchy social clip or a polished brand film, 2 Second Hook delivers video that connects.</p>
+
+    <div class="services__grid">
+
+      <!-- Talking Head / Social Media -->
+      <article class="service-card" data-reveal>
+        <img
+          class="service-card__img"
+          src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=75"
+          alt="Creator recording a talking head video in a studio setup"
+          loading="lazy"
+          width="600" height="210"
+        />
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+          </div>
+          <h3 class="service-card__title">Talking Head Videos</h3>
+          <p class="service-card__text">Professional single or multi-camera talking head shoots designed for YouTube, TikTok, Instagram Reels, LinkedIn, and Podcasts. Clean backgrounds, crisp audio, expert framing.</p>
+        </div>
+      </article>
+
+      <!-- Social Media Content -->
+      <article class="service-card" data-reveal>
+        <img
+          class="service-card__img"
+          src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=75"
+          alt="Phone displaying social media content reels"
+          loading="lazy"
+          width="600" height="210"
+        />
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.4 9 4.5-.9-4.2 4-6.5 7-3.8 1.1 0 3-1.2 3-1.7z"/></svg>
+          </div>
+          <h3 class="service-card__title">Social Media Content</h3>
+          <p class="service-card__text">Short-form vertical videos, story sequences, and branded reels optimized for maximum engagement — edited with trending transitions, captions, and platform-specific formats.</p>
+        </div>
+      </article>
+
+      <!-- Local Business Advertising -->
+      <article class="service-card" data-reveal>
+        <img
+          class="service-card__img"
+          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=75"
+          alt="Small business owner filming a promotional video"
+          loading="lazy"
+          width="600" height="210"
+        />
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <h3 class="service-card__title">Local Business Advertising</h3>
+          <p class="service-card__text">Compelling video ads for local businesses — showcase your team, space, and offerings with a polished production that drives foot traffic and online conversions.</p>
+        </div>
+      </article>
+
+      <!-- Event Videography -->
+      <article class="service-card" data-reveal>
+        <img
+          class="service-card__img"
+          src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=600&q=75"
+          alt="Videographer filming a live event with a cinema camera"
+          loading="lazy"
+          width="600" height="210"
+        />
+        <div class="service-card__body">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="service-card__title">Event Videography &amp; Photography</h3>
+          <p class="service-card__text">Full-event coverage — corporate conferences, product launches, sports events, and community gatherings. Cinematic highlight reels, raw footage delivery, and professional photography.</p>
+        </div>
+      </article>
+
+    </div><!-- /services__grid -->
+  </div>
+</section>
+
+<!-- ========================================================
+     EQUIPMENT
+======================================================== -->
+<section class="section section--alt" id="equipment" aria-labelledby="equipment-heading">
+  <div class="container">
+    <span class="section__label">The Toolkit</span>
+    <h2 class="section__heading" id="equipment-heading">Professional-Grade Equipment</h2>
+    <p class="section__sub">Every shoot is backed by reliable, high-quality gear chosen to deliver cinematic results at any budget level.</p>
+
+    <div class="equipment__grid">
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <h3>Cinema Cameras</h3>
+        <p>4K/6K capable mirrorless &amp; cinema cameras with professional colour science.</p>
+      </div>
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        </div>
+        <h3>Studio Audio</h3>
+        <p>Lavalier mics, directional shotguns, and wireless rigs for crystal-clear sound capture.</p>
+      </div>
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Lighting</h3>
+        <p>LED panel arrays, bi-colour continuous lights, and portable speedlights for any location.</p>
+      </div>
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3>Stabilisation</h3>
+        <p>3-axis gimbals, fluid-head tripods, and slider rigs for buttery-smooth motion shots.</p>
+      </div>
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Editing Workstation</h3>
+        <p>High-spec editing suite running DaVinci Resolve, Premiere Pro, and After Effects.</p>
+      </div>
+
+      <div class="equip-item" data-reveal>
+        <div class="equip-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Drone / Aerial</h3>
+        <p>FAA-Part 107 compliant drone operations for stunning aerial perspectives.</p>
+      </div>
+
+    </div><!-- /equipment__grid -->
+  </div>
+</section>
+
+<!-- ========================================================
+     WEB & EDITING FEATURE
+======================================================== -->
+<section class="section" id="web" aria-labelledby="web-heading">
+  <div class="container">
+
+    <!-- Editing Feature -->
+    <div class="feature" data-reveal>
+      <div class="feature__media">
+        <img
+          src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=75"
+          alt="Video editor working on a colour-graded timeline in DaVinci Resolve"
+          loading="lazy"
+          width="800" height="420"
+        />
+      </div>
+      <div class="feature__copy">
+        <span class="section__label">Post-Production</span>
+        <h2 id="web-heading">Professional Video Editing</h2>
+        <p style="color:var(--clr-muted);margin-bottom:0.5rem;">
+          Raw footage is just the beginning. Every deliverable goes through a meticulous post-production workflow — colour grading, audio mixing, motion graphics, and text overlays that elevate your story.
+        </p>
+        <ul class="feature__list">
+          <li>Colour grading &amp; LUT application for cinematic look</li>
+          <li>Animated text overlays, lower thirds, and titles</li>
+          <li>Licensed background music selection &amp; audio mastering</li>
+          <li>Multiple export formats optimised per platform</li>
+          <li>Up to 2 rounds of revisions included in all packages</li>
+        </ul>
+        <div class="feature__cta">
+          <a href="pricing.html" class="btn btn--primary">See Editing Packages</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:6rem"></div>
+
+    <!-- Web Deployment Feature -->
+    <div class="feature feature--reverse" data-reveal>
+      <div class="feature__copy">
+        <span class="section__label">Digital Presence</span>
+        <h2>Website Build &amp; Deployment</h2>
+        <p style="color:var(--clr-muted);margin-bottom:0.5rem;">
+          Beyond the camera — 2 Second Hook builds and deploys fast, responsive websites so your video content lives in a home that converts visitors into customers.
+        </p>
+        <ul class="feature__list">
+          <li>Custom-designed websites tailored to your brand identity</li>
+          <li>Mobile-first, accessible, and SEO-optimised code</li>
+          <li>Domain setup, hosting configuration, and SSL certificates</li>
+          <li>Video integration — autoplay heroes, embedded reels, galleries</li>
+          <li>Ongoing maintenance &amp; content update plans available</li>
+        </ul>
+        <div class="feature__cta">
+          <a href="pricing.html#contact" class="btn btn--primary">Request a Quote</a>
+        </div>
+      </div>
+      <div class="feature__media">
+        <img
+          src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=75"
+          alt="Developer reviewing a responsive website layout on multiple devices"
+          loading="lazy"
+          width="800" height="420"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     STATS BANNER
+======================================================== -->
+<div class="stats" aria-label="Key statistics" role="region">
+  <div class="container">
+    <div class="stats__grid">
+      <div>
+        <div class="stat__number">4K</div>
+        <div class="stat__label">Resolution Standard</div>
+      </div>
+      <div>
+        <div class="stat__number">48h</div>
+        <div class="stat__label">Avg. Turnaround</div>
+      </div>
+      <div>
+        <div class="stat__number">2s</div>
+        <div class="stat__label">Hook Every Time</div>
+      </div>
+      <div>
+        <div class="stat__number">∞</div>
+        <div class="stat__label">Creative Possibilities</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     ABOUT — Current Content Creator
+======================================================== -->
+<section class="section section--alt" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="feature" data-reveal>
+      <div class="feature__media">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=75"
+          alt="Content creator filming behind-the-scenes at a creative shoot"
+          loading="lazy"
+          width="800" height="420"
+        />
+      </div>
+      <div class="feature__copy">
+        <span class="section__label">About the Creator</span>
+        <h2 id="about-heading">A Real Creator — Not Just a Camera Operator</h2>
+        <p style="color:var(--clr-muted);">
+          I'm not just behind the lens for clients — I'm an active content creator myself, consistently producing and publishing video content across multiple platforms. That means I understand the algorithm, the trends, the formats that actually perform, and the pressure of maintaining a consistent output schedule.
+        </p>
+        <ul class="feature__list">
+          <li>Active content creator with a growing online audience</li>
+          <li>Deep platform knowledge: YouTube, TikTok, Instagram, LinkedIn</li>
+          <li>Strategy-first approach — production that serves your goals</li>
+          <li>Website builder &amp; deployer — your content deserves a home</li>
+          <li>Full-service: concept → shoot → edit → publish → report</li>
+        </ul>
+        <div class="feature__cta">
+          <a href="pricing.html" class="btn btn--primary">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="2 Second Hook home">2<span style="color:var(--clr-white)">SecondHook</span></a>
+        <p>Professional videography, content creation, editing, and web deployment. Hook your audience in 2 seconds — every time.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Talking Head Videos</a></li>
+          <li><a href="#services">Social Media Content</a></li>
+          <li><a href="#services">Local Business Ads</a></li>
+          <li><a href="#services">Event Videography</a></li>
+          <li><a href="#web">Editing &amp; Post-Production</a></li>
+          <li><a href="#web">Website Build &amp; Deploy</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html#contact">Book Now</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#equipment">Equipment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; <span id="year"></span> 2 Second Hook. All rights reserved.</span>
+      <span class="footer__copy">Serving local businesses &amp; creators everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

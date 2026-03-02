@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2 Second Hook pricing — transparent tiers for every budget. Basic shoots, advanced b-roll packages, event coverage, editing-only plans, and monthly retainer options." />
+  <title>Pricing &amp; Book — 2 Second Hook</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    [data-reveal].is-visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================
+     NAVIGATION
+======================================================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="2 Second Hook home">
+      2<span>SecondHook</span>
+    </a>
+
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#equipment">Equipment</a></li>
+      <li><a href="index.html#web">Web &amp; Editing</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="#contact" class="btn btn--primary">Book Now</a></li>
+    </ul>
+
+    <button class="nav__toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========================================================
+     PRICING HERO
+======================================================== -->
+<header class="pricing-hero" aria-labelledby="pricing-page-heading">
+  <div class="container">
+    <span class="section__label">Transparent Pricing</span>
+    <h1 id="pricing-page-heading">Simple Plans,<br />Cinematic Results</h1>
+    <p>Every budget deserves professional video. Choose a tier below or <a href="#contact" style="color:var(--clr-gold)">contact us</a> for a custom quote.</p>
+  </div>
+</header>
+
+<!-- ========================================================
+     SHOOT + EDIT PACKAGES
+======================================================== -->
+<section class="section" aria-labelledby="packages-heading">
+  <div class="container">
+    <span class="section__label">Shoot &amp; Edit Packages</span>
+    <h2 class="section__heading" id="packages-heading">Choose Your Production Tier</h2>
+    <p class="section__sub">All packages include on-location filming, professional editing, and a final deliverable ready for upload or broadcast.</p>
+
+    <div class="pricing__grid">
+
+      <!-- Basic -->
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-card__tier">Starter</div>
+        <h3 class="pricing-card__name">Basic Shoot</h3>
+        <div class="pricing-card__price">
+          <span class="amount">$199</span>
+          <span class="period">/ session</span>
+        </div>
+        <p class="pricing-card__desc">
+          A focused 1-hour shoot producing a polished 30-second final video — ideal for social media posts, product spotlights, or quick announcements.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            1-hour on-location shoot
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            30-second edited final video
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Colour grading &amp; audio clean-up
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            1 round of revisions
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            MP4 delivery (vertical + horizontal)
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Book Basic</a>
+      </div>
+
+      <!-- Plus / Advanced -->
+      <div class="pricing-card pricing-card--featured" data-reveal>
+        <div class="pricing-card__badge">Most Popular</div>
+        <div class="pricing-card__tier">Advanced</div>
+        <h3 class="pricing-card__name">Pro Shoot</h3>
+        <div class="pricing-card__price">
+          <span class="amount">$449</span>
+          <span class="period">/ session</span>
+        </div>
+        <p class="pricing-card__desc">
+          A comprehensive 90-minute production with B-roll capturing, advanced editing, and dynamic text overlays — perfect for brand films, promotional ads, and detailed testimonials.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            90-minute on-location shoot
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            B-roll footage (cutaways, product, location)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Advanced edit: transitions, pacing, music
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Animated text overlays &amp; lower thirds
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 3 minutes finished video
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            2 rounds of revisions
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Multi-format delivery
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Book Pro</a>
+      </div>
+
+      <!-- Event -->
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-card__tier">Event</div>
+        <h3 class="pricing-card__name">Event Coverage</h3>
+        <div class="pricing-card__price">
+          <span class="amount">$125</span>
+          <span class="period">/ hr</span>
+        </div>
+        <p class="pricing-card__desc">
+          Comprehensive event documentation charged hourly — conferences, launches, sports days, celebrations. Photography add-on available. Minimum 2-hour booking.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Hourly rate — min. 2 hrs
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Multi-camera setup (where applicable)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Highlight reel edited &amp; delivered
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Raw footage included
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Photography add-on: +$75/hr
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Book Event</a>
+      </div>
+
+    </div><!-- /pricing__grid -->
+  </div>
+</section>
+
+<!-- ========================================================
+     EDITING-ONLY PACKAGES
+======================================================== -->
+<section class="section section--alt" aria-labelledby="editing-heading">
+  <div class="container">
+    <span class="section__label">Already Have Footage?</span>
+    <h2 class="section__heading" id="editing-heading">Editing-Only Packages</h2>
+    <p class="section__sub">Send us your raw clips and we'll transform them into polished, professional content ready to publish.</p>
+
+    <div class="pricing__grid">
+
+      <!-- Personal Edit -->
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-card__tier">Personal</div>
+        <h3 class="pricing-card__name">Personal Edit</h3>
+        <div class="pricing-card__price">
+          <span class="amount">$79</span>
+          <span class="period">/ video</span>
+        </div>
+        <p class="pricing-card__desc">
+          Ideal for individual creators who film their own content and need a professional editor to bring it together.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 60 seconds finished video
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Colour grade &amp; audio polish
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Captions / subtitles
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Music selection from royalty-free library
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            1 round of revisions
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Get Started</a>
+      </div>
+
+      <!-- Professional Edit -->
+      <div class="pricing-card pricing-card--featured" data-reveal>
+        <div class="pricing-card__badge">Best Value</div>
+        <div class="pricing-card__tier">Professional</div>
+        <h3 class="pricing-card__name">Professional Edit</h3>
+        <div class="pricing-card__price">
+          <span class="amount">$199</span>
+          <span class="period">/ video</span>
+        </div>
+        <p class="pricing-card__desc">
+          Full-service edit for businesses and professional creators. Advanced motion graphics, brand-consistent design, and broadcast-ready output.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 10 minutes finished video
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Advanced colour grade (LUT + manual)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Animated intro/outro &amp; lower thirds
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Text overlays &amp; motion graphics
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Licensed music &amp; SFX
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Multi-format delivery (16:9, 9:16, 1:1)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            2 rounds of revisions
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+      </div>
+
+      <!-- Custom Edit -->
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-card__tier">Custom</div>
+        <h3 class="pricing-card__name">Custom Project</h3>
+        <div class="pricing-card__price">
+          <span class="amount">Let's Talk</span>
+        </div>
+        <p class="pricing-card__desc">
+          Longer-form documentaries, multi-part series, podcast post-production, or anything that doesn't fit a standard package.
+        </p>
+        <ul class="pricing-card__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Any length or format
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Dedicated project timeline
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Full creative collaboration
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Quote provided within 24 hrs
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Enquire</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     RETAINER / SCHEDULED SESSIONS
+======================================================== -->
+<section class="section" aria-labelledby="retainer-heading">
+  <div class="container">
+    <span class="section__label">Consistency = Growth</span>
+    <h2 class="section__heading" id="retainer-heading">Monthly Content Retainers</h2>
+    <p class="section__sub">Lock in a regular content schedule and save — the algorithm rewards consistency, and so do we.</p>
+
+    <div class="retainer__grid">
+
+      <div class="retainer-card" data-reveal>
+        <div class="retainer-card__freq">2× / Month</div>
+        <h3>Starter Retainer</h3>
+        <div class="retainer-card__price">$349<span style="font-size:1rem;font-weight:400;color:var(--clr-muted)">/mo</span></div>
+        <p>2 shoot sessions per month. Each session includes a 30-second edited deliverable. Great for businesses posting twice a month.</p>
+      </div>
+
+      <div class="retainer-card" data-reveal>
+        <div class="retainer-card__freq">4× / Month</div>
+        <h3>Growth Retainer</h3>
+        <div class="retainer-card__price">$649<span style="font-size:1rem;font-weight:400;color:var(--clr-muted)">/mo</span></div>
+        <p>4 shoot sessions per month — one per week. Mix of short-form social clips and one longer brand video. Ideal for active content strategies.</p>
+      </div>
+
+      <div class="retainer-card" data-reveal>
+        <div class="retainer-card__freq">6× / Month</div>
+        <h3>Pro Retainer</h3>
+        <div class="retainer-card__price">$929<span style="font-size:1rem;font-weight:400;color:var(--clr-muted)">/mo</span></div>
+        <p>6 sessions monthly. B-roll, talking head, and event content combined. Suited for growing brands needing varied regular output.</p>
+      </div>
+
+      <div class="retainer-card" data-reveal>
+        <div class="retainer-card__freq">8× / Month</div>
+        <h3>Agency Retainer</h3>
+        <div class="retainer-card__price">$1,199<span style="font-size:1rem;font-weight:400;color:var(--clr-muted)">/mo</span></div>
+        <p>Maximum output — 8 sessions per month covering all content types. Full editorial calendar planning, priority turnaround, and dedicated support.</p>
+      </div>
+
+    </div>
+
+    <p style="color:var(--clr-muted);font-size:0.88rem;margin-top:2rem;text-align:center;">
+      All retainer packages can be customised. <a href="#contact" style="color:var(--clr-gold)">Contact us</a> to build your ideal plan.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================
+     CONTACT / REGISTRATION FORM
+======================================================== -->
+<section class="section contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact__inner">
+
+      <!-- Info side -->
+      <div class="contact__info" data-reveal>
+        <span class="section__label">Let's Talk</span>
+        <h2 id="contact-heading">Request a Callback &amp; Quote</h2>
+        <p>Fill out the form and I'll get back to you within 24 hours to discuss your project, answer questions, and put together a package that fits your budget.</p>
+
+        <div class="contact__detail">
+          <div class="contact__detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Responds within 24 hours
+          </div>
+          <div class="contact__detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+            Free consultation call available
+          </div>
+          <div class="contact__detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            48-hour average project turnaround
+          </div>
+          <div class="contact__detail-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            On-location shoots — your area or studio
+          </div>
+        </div>
+      </div>
+
+      <!-- Form side -->
+      <div data-reveal>
+        <!--
+          ACTION REQUIRED — FORMSPREE SETUP:
+          1. Sign up at https://formspree.io (free tier allows 50 submissions/month)
+          2. Create a new form and copy your unique form ID (e.g. "abcd1234")
+          3. Replace YOUR_FORM_ID below with that ID:
+             action="https://formspree.io/f/abcd1234"
+          The form will not send emails until this is configured.
+        -->
+        <form
+          id="contact-form"
+          class="form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          novalidate
+          aria-label="Contact and booking request form"
+        >
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Full Name <span aria-hidden="true" style="color:var(--clr-gold)">*</span></label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address <span aria-hidden="true" style="color:var(--clr-gold)">*</span></label>
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone Number</label>
+              <input
+                class="form__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(555) 000-0000"
+                autocomplete="tel"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Service Interested In <span aria-hidden="true" style="color:var(--clr-gold)">*</span></label>
+              <select class="form__select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="basic-shoot">Basic Shoot ($199)</option>
+                <option value="pro-shoot">Pro Shoot ($449)</option>
+                <option value="event-coverage">Event Coverage ($125/hr)</option>
+                <option value="personal-edit">Personal Edit ($79)</option>
+                <option value="professional-edit">Professional Edit ($199)</option>
+                <option value="retainer-2x">Starter Retainer 2×/mo ($349)</option>
+                <option value="retainer-4x">Growth Retainer 4×/mo ($649)</option>
+                <option value="retainer-6x">Pro Retainer 6×/mo ($929)</option>
+                <option value="retainer-8x">Agency Retainer 8×/mo ($1,199)</option>
+                <option value="website">Website Build &amp; Deployment</option>
+                <option value="custom">Custom / Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="message">Description of Services Needed <span aria-hidden="true" style="color:var(--clr-gold)">*</span></label>
+            <textarea
+              class="form__textarea"
+              id="message"
+              name="message"
+              placeholder="Tell me about your project — what you're shooting, your goals, timeline, location, and anything else that will help me put together the right package for you."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Honeypot field to reduce spam -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="form__submit">
+            <button type="submit" class="btn btn--primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send My Request
+            </button>
+          </div>
+          <p class="form__note">Your information is never shared with third parties.</p>
+        </form>
+
+        <div id="form-success" class="form__success" role="alert" aria-live="polite">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin:0 auto 0.8rem;display:block" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <strong>Message sent!</strong><br />
+          Thank you for reaching out. I'll be in touch within 24 hours.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="2 Second Hook home">2<span style="color:var(--clr-white)">SecondHook</span></a>
+        <p>Professional videography, content creation, editing, and web deployment. Hook your audience in 2 seconds — every time.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Packages</h4>
+        <ul>
+          <li><a href="#packages-heading">Basic Shoot — $199</a></li>
+          <li><a href="#packages-heading">Pro Shoot — $449</a></li>
+          <li><a href="#packages-heading">Event Coverage — $125/hr</a></li>
+          <li><a href="#editing-heading">Personal Edit — $79</a></li>
+          <li><a href="#editing-heading">Professional Edit — $199</a></li>
+          <li><a href="#retainer-heading">Monthly Retainers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; <span id="year"></span> 2 Second Hook. All rights reserved.</span>
+      <span class="footer__copy">Serving local businesses &amp; creators everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
