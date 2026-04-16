@@ -53,35 +53,28 @@
 ======================================================== -->
 <section class="hero" aria-label="Hero">
   <div class="hero__video-wrap" aria-hidden="true">
-    <!--
-      REPLACE: swap the src below with your actual showreel video file.
-      Recommended format: MP4 (H.264), 1920×1080, < 20 MB for fast load.
-      Example: <source src="assets/showreel.mp4" type="video/mp4" />
-    -->
-    <!--
-      ACTION REQUIRED: Add your showreel video as assets/hero-showreel.mp4
-      See assets/README.md for file requirements and compression tips.
-      Until the file is added, the poster image below will be shown instead.
-    -->
     <video
+      class="hero__video"
       autoplay
       muted
       loop
       playsinline
       preload="metadata"
       poster="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1920&q=80"
-      aria-hidden="true"
     >
       <source src="/videos/2secondHero.mp4" type="video/mp4" />
     </video>
   </div>
+
   <div class="hero__overlay" aria-hidden="true"></div>
 
-  <div class="container">
+  <div class="container hero__inner">
     <div class="hero__content">
       <span class="hero__badge">
-        <!-- camera icon -->
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+          <circle cx="12" cy="13" r="4"/>
+        </svg>
         Professional Videography &amp; Content Creation
       </span>
 
@@ -90,7 +83,7 @@
       </h1>
 
       <p class="hero__sub">
-        From cinematic social media reels to full-scale event coverage and local business ads — compelling visuals crafted to stop the scroll and drive results.
+        Cinematic reels, local business promos, event coverage, and fast-turn content built to stop the scroll.
       </p>
 
       <div class="hero__actions">
@@ -101,11 +94,12 @@
   </div>
 
   <div class="hero__scroll" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
     Scroll
   </div>
 </section>
-
 <!-- ========================================================
      SERVICES
 ======================================================== -->
